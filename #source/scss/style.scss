@@ -332,13 +332,14 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	line-height: 25px;
 }
 //==================================================
-.contacts {
-	padding: 80px 0px 0px 0px;
+.contacts {padding: 80px 0px 0px 0px;
 	@media (max-width:$md2+px){
 		padding: 30px 0px 0px 0px;
 	}
 }
-.contacts__title {font-family: 'AkzidenzGroteskBQCondensedBold';
+.contacts-top {}
+.contacts__title {
+	font-family: 'AkzidenzGroteskBQCondensedBold';
 	text-transform: uppercase;
 	font-size: 50px;
 	letter-spacing: 5px;
@@ -371,6 +372,7 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 .contacts-body__item--3 {
 	background: url('../img/contacts/03.svg') left no-repeat;
 }
+
 .contacts-social {
 	@include flexbox();
 }
@@ -378,10 +380,6 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	margin: 0px 30px 0px 0px;
 	&:last-child{margin:0px 0px 0px 0px;}
 }
-.contacts-social__item--1 { }
-.contacts-social__item--2 { }
-.contacts-social__item--3 { }
-.contacts-social__item--4 { }
 .contacts-content {
 	@include flexbox();
 	background-color: #000;
@@ -392,17 +390,37 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 .contacts-content__column {
 	flex: 0 0 50%;
 }
-.contacts-content__map { }
-.contacts-content-form { }
-.contacts-content-form__title { }
-.contacts-content-form-body { }
-.contacts-content-form-line { }
-.input { }
-.req { }
-.contacts-content-form-button { }
-.contacts-content-form__btn { }
-.btn { }
-.btn--w { }
+.contacts-content__map {
+	height: 100%;
+	@media (max-width:$md2+px){
+		height: 300px;
+	}
+}
+.contacts-content-form {
+	padding: 55px 60px;
+	@media (max-width:$md2+px){
+		padding: 30px;
+	}
+}
+.contacts-content-form__title {
+	font-family: 'AkzidenzGroteskBQCondensedBold';
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 5px;
+	margin: 0px 0px 30px 0px;
+}
+.contacts-content-form-body {
+	max-width: 375px;
+	@media (max-width:$md2+px){
+		max-width: none;
+	}
+}
+.contacts-content-form-line {
+	margin: 0px 0px 25px 0px;
+}
+.contacts-content-form-button {}
+.contacts-content-form__btn {}
 
 
 //</ОСНОВНОЙ БЛОК>

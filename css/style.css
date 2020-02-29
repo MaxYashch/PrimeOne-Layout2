@@ -804,6 +804,35 @@ header {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%; }
 
+.contacts-content__map {
+  height: 100%; }
+  @media (max-width: 767.98px) {
+    .contacts-content__map {
+      height: 300px; } }
+
+.contacts-content-form {
+  padding: 55px 60px; }
+  @media (max-width: 767.98px) {
+    .contacts-content-form {
+      padding: 30px; } }
+
+.contacts-content-form__title {
+  font-family: 'AkzidenzGroteskBQCondensedBold';
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin: 0px 0px 30px 0px; }
+
+.contacts-content-form-body {
+  max-width: 375px; }
+  @media (max-width: 767.98px) {
+    .contacts-content-form-body {
+      max-width: none; } }
+
+.contacts-content-form-line {
+  margin: 0px 0px 25px 0px; }
+
 .form-row {
   display: -webkit-box;
   display: -moz-box;
